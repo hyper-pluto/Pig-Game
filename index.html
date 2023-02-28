@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="player player-1 player-active">
+        <h2 class='name' id='name-1'>Player 1</h2>
+        <p class='score' id='score-1'>43</p>
+        <div class='current'>
+          <p class='currentLabel'>Current</p>
+          <p class='currentScore' id='current-1'>0</p>
+        </div>
+      </section>
+
+      <section class='player player-2'>
+        <h2 class='name' id='name-2'>Player 2</h2>
+        <p class='score' id='score-2'>4</p>
+        <div class='current'>
+          <p class='currentLabel'>Current</p>
+          <p class='currentScore' id='current-2'>0</p>
+        </div>
+      </section>
+
+      <img src="dice-1.png" alt="dice1" class='dice'>
+      <button class='btn btn--rules'>📑 How To Play</button>
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+
+    <div class='modal hidden'>
+      <button class='closeModal'>&times</button>
+      <h1 class='text1'>Pig Dice Game Rules 🐷</h1> <br>
+      <p class='ptext'>Pig is a simple dice game which you win by being the first player to score 100 or more points.</p> <br><br>
+      <h2 class='text2'>So how do you play Pig?</h2> <br>
+      <p class='ptext'>The starting player rolls the die and scores as many points as the total shown on the die providing the die doesn’t roll a 1. The player may continue rolling and accumulating points (but risk rolling a 1) or end his turn.
+        If the player rolls a 1 their turn is over, they lose all points they've accumulated that turn, and then it's the next players turn.
+        Play passes from player to player until a winner is determined. The first player to reach 100 WINS!</p>
+    </div>
+
+    <div class='overlay hidden'></div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
